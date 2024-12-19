@@ -1,0 +1,18 @@
+<ion-card>
+<p> Perimetro <p>
+<p> El perimetro de un circulo es la longitud de la linea de forma su borde. </p>
+<ion-img src="./assets/imagenes/circulo.jpg"></ion-img>
+</ion-card>
+
+<ion-list>
+
+  <ion-item>
+    <ion-input label="Radio(cm)" [(ngModel)]="txtRadio"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular el perimetro</ion-button>
+  </ion-item>
+</ion-list>
+
+<ion-text> {{ resultado }} </ion-text>
